@@ -3,11 +3,27 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
+  background: url("https://emeken-portfolio.s3.us-west-2.amazonaws.com/web/_W4A2567.JPG");
+  background-color: var(--primary-clr);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
   h1 {
     color: var(--neutral-clr-02);
     font-size: clamp(var(--font-01), 10vw, 14vw);
     height: min-content;
     margin: auto;
     letter-spacing: max(0.02em, 0.25vw);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      filter: blur(20px);
+      width: 100%;
+      height: 100%;
+    }
   }
 }
