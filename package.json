@@ -13,11 +13,11 @@
     "baseDirectory": "dist"
   },
   "scripts": {
-    "clean": "rm dist/bundle.js",
+    "clean": "rimraf dist",
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "npm run clean && parcel build src/index.html --public-url ./",
     "test": "jest",
-    "serve": "npm run build && parcel serve dist/index.html"
+    "serve": "parcel serve dist/index.html"
   },
   "dependencies": {
     "date-fns": "^2.29.2",
@@ -44,6 +44,7 @@
     "postcss-modules": "^5.0.0",
     "prettier": "^2.7.1",
     "process": "^0.11.10",
+    "rimraf": "^3.0.2",
     "sqlite3": "^5.0.11"
   },
   "optionalDependencies": {
