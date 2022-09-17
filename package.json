@@ -1,5 +1,5 @@
 {
-  "name": "takehome",
+  "name": "emeke-nkadi-portfolio",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -17,7 +17,7 @@
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./",
     "test": "jest",
-    "server": "parcel serve dist/index.html"
+    "serve": "npm run build && parcel serve dist/index.html"
   },
   "dependencies": {
     "date-fns": "^2.29.2",
