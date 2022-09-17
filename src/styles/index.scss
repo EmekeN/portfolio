@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  h1 {
+    color: var(--neutral-clr-02);
+    font-size: clamp(var(--font-01), 10vw, 14vw);
+    height: min-content;
+    margin: auto;
+    letter-spacing: max(0.02em, 0.25vw);
+  }
+}
