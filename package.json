@@ -7,6 +7,12 @@
   "author": "",
   "license": "ISC",
   "proxy": "http://localhost:3001",
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "baseDirectory": "dist"
+  },
   "scripts": {
     "clean": "rm dist/bundle.js",
     "start": "parcel src/index.html",
