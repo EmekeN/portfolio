@@ -14,8 +14,8 @@
   },
   "scripts": {
     "clean": "rimraf dist",
+    "build": "parcel build src/index.html --dist-dir dist --public-url ./",
     "start": "parcel src/index.html",
-    "build": "npm run clean && parcel build src/index.html --dist-dir dist --public-url ./",
     "test": "jest",
     "serve": "parcel serve dist/index.html"
   },
